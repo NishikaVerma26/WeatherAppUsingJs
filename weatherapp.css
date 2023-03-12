@@ -19,8 +19,7 @@ main {
     /* vertically */
     justify-content: center;
     /* horizontally */
-    width: 1000px;
-    
+    width: 1000px;  
 }
 
 #search {
