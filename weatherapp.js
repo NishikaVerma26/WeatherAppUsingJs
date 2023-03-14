@@ -12,12 +12,12 @@ const getWeather = async(city) => {
     const data = await response.json()
     return showWeather(data)
 }
+
 const showWeather = (data) => {
     if (data.cod == "404") {
         weather.innerHTML = `<h2> City Not Found <h2>`
         return;
     }
-
     weather.innerHTML = `
         <div>
             <img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png" alt="">
